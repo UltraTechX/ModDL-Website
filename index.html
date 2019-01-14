@@ -14,14 +14,14 @@
   </head>
   <body style="height:100%">
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="https://opifexdev.net/#">ModDL</a>
+      <a class="navbar-brand" href="https://opifexdev.net/#T" onclick="test('T'); return false;">ModDL</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://opifexdev.net/#A">About </a>
+            <a class="nav-link" href="https://opifexdev.net/#A" onclick="test('A'); return false;">About </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://opifexdev.net/browse/">Browse</a>
@@ -33,7 +33,7 @@
             <a class="nav-link" href="https://github.com/UltraTechX/ModDL-Issues/issues">Report A Bug</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://opifexdev.net/#C">Contact Us</a>
+            <a class="nav-link" href="https://opifexdev.net/#C" onclick="test('C'); return false;">Contact Us</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -48,8 +48,16 @@
     </nav>
     <div class="background">
       <div class="layer">
-        <h1>ModDL</h1>
-        <p>An easy-to-install and easy-to-use workshop for all Minecraft mods.</p>
+        <div id="T" class="curtain">
+          <h1>ModDL</h1>
+          <p>An easy-to-install and easy-to-use workshop for all Minecraft mods.</p>
+        </div>
+        <div id="A" class="curtain">
+          About/Features
+        </div>
+        <div id="C" class="curtain">
+          Contact Us
+        </div>
       </div>
     </div>
 
@@ -61,5 +69,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://opifexdev.net/js/jquery.cookie-1.4.1.min.js"></script>
     <script src="https://opifexdev.net/js/NavBarAccountButton.js"></script>
+    <script src="https://opifexdev.net/js/scrollTo.js"></script>
+    <script src="https://opifexdev.net/js/ModDLDownload.js"></script>
   </body>
 </html>
