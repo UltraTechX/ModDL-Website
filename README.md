@@ -1,6 +1,6 @@
 # ModDL-Website
 The website side of ModDL v2019
-Made from scratch using HTML, CSS, Bootstrap, PHP, and AngularJS connected with a MySQL database.
+Made from scratch using HTML, CSS, Bootstrap, PHP, and JQuery connected with a MySQL database.
 
 DO NOT PLACE BUG REPORTS/ISSUES/QUESTIONS HERE, POST THOSE IN https://github.com/UltraTechX/ModDL-Issues/issues
 
