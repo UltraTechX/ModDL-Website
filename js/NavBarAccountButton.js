@@ -11,12 +11,12 @@ $(document).ready(function(){
             var aconfirm = data.authConfirm; // John
             var usrid = data.userID;
             if(aconfirm == true){
-              document.getElementById("accInfoBox").replaceWith("<a href='' class='btn btn-primary btn-lg active' role='button' aria-pressed='true'>"+usrid+"</a>");
+              document.getElementById("accInfoBox").replaceWith('<a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">"+usrid+"</a>');
             }else{
-              document.getElementById("accInfoBox").replaceWith("<a href='' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Sign In</a>");
+              document.getElementById("accInfoBox").replaceWith('<a href="" class="btn btn-outline-secondary" role="button" aria-pressed="false">Sign In</a>');
             }
        });
   }else{
-    document.getElementById("accInfoBox").replaceWith("<a href='' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Sign In</a>");
+    document.getElementById("accInfoBox").replaceWith('<a href="" class="btn btn-outline-secondary" role="button" aria-pressed="false">Sign In</a>');
   }
 });
