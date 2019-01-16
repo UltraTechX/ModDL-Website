@@ -17,6 +17,6 @@ $(document).ready(function(){
             }
        });
   }else{
-    document.getElementById("accInfoBox").append($('<li class="nav-item" id="accInfoBox"><a href="https://opifexdev.net/user/signin/?returnTo='+window.location.href+'" class="btn btn-outline-secondary" role="button" aria-pressed="false">Sign In</a></li>'));
+    document.getElementById("accInfoBox").append($('<a href="https://opifexdev.net/user/signin/?returnTo='+window.location.href+'" class="btn btn-outline-secondary" role="button" aria-pressed="false">Sign In</a>'));
   }
 }); ``
