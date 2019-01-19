@@ -11,12 +11,14 @@ $(document).ready(function(){
             var aconfirm = data.authConfirm; // John
             var usrid = data.userID;
             if(aconfirm == true){
-              document.getElementById("accInfoBox").replaceWith('<a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">"+usrid+"</a>');
+              document.getElementById("accRegisterBox").replaceWith('<a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">"+usrid+"</a>');
             }else{
-              document.getElementById("accInfoBox").replaceWith('<a href="https://opifexdev.net/user/signin/?returnTo='+window.location.href+'" class="btn btn-outline-secondary" role="button" aria-pressed="false">Sign In</a>');
+              $(document.getElementById("accInfoBox")).append($("<a href='https://opifexdev.net/user/signin/' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Sign In</a>"));
+              $(document.getElementById("accRegisterBox")).append($("<a href='https://opifexdev.net/user/register/' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Register</a>"));
             }
        });
   }else{
-    document.getElementById("accInfoBox").append($('<a href="https://opifexdev.net/user/signin/?returnTo='+window.location.href+'" class="btn btn-outline-secondary" role="button" aria-pressed="false">Sign In</a>'));
+    $(document.getElementById("accInfoBox")).append($("<a href='https://opifexdev.net/user/signin/' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Sign In</a>"));
+    $(document.getElementById("accRegisterBox")).append($("<a href='https://opifexdev.net/user/register/' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Register</a>"));
   }
-}); ``
+});

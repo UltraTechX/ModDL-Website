@@ -41,3 +41,11 @@ html, body {
   font-size: 36px;
   margin-bottom: -10%;
 }
+
+#accInfoBox{
+  padding-right: 10px
+}
+
+#accRegisterBox{
+  padding-right: 10px
+}
