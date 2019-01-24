@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.background{
+  background: rgba(30,30,30,1);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  height: 100%;
+  width: 100%;
+}
+
+#topHeader {
+  color: rgba(200, 200, 200, 0.9);
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 175px;
+  margin-top: -20%;
+  text-decoration: underline;
+  text-decoration-color: rgba(50, 50, 50, 1);
+}
+
+h1{
+  color: rgba(200, 200, 200, 0.9);
+  font-family: "Roboto", sans-serif;
+  font-size: 56px;
+  margin-left: 20%;
+}
+
+h5{
+  color: rgba(200, 200, 200, 0.9);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+h4{
+  color: rgba(200, 200, 200, 0.9);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-left: 20%;
+}
+
+#accInfoBox{
+  padding-right: 10px
+}
+
+#accRegisterBox{
+  padding-right: 10px
+}
