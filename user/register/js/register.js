@@ -11,7 +11,7 @@ $(document).ready(function(){
             var aconfirm = data.authConfirm; // John
             var usrid = data.userID;
             if(aconfirm == true){
-              window.location.replace("https://opifexdev.net/user/");
+              window.location.replace("https://opifexdev.net/user/profile");
             }else{
               $(document.getElementById("accInfoBox")).append($("<a href='https://opifexdev.net/user/signin' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Sign In</a>"));
               $(document.getElementById("accRegisterBox")).append($("<a href='https://opifexdev.net/user/register' class='btn btn-outline-secondary' role='button' aria-pressed='false'>Register</a>"));
