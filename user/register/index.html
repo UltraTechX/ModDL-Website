@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="css/register.css">
     <title>Register for ModDL</title>
   </head>
@@ -52,9 +53,33 @@
     <div class="background">
       <br/>
       <h1>Sign Up</h1>
-      <h5>And get instant access to the most convenient minecraft mod ever made.</h5>
+      <h5>And get instant access to extra features of the most convenient minecraft mod ever made. If you already have an account please <a href="https://opifexdev.net/user/signin/">click here.</a></h5>
       <br/>
       <h4>Create your account</h4>
+      <hr size=30 width=66%>
+      <form name="registerForm" id="registerForm" action="https://opifexdev.net/user/register/register.php" method="post">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter a username">
+          <small id="usernameHelp" class="form-text text-muted">Username can only be 32 characters at most.</small>
+        </div>
+        <div class="form-group">
+          <label for="emailaddr">Email address</label>
+          <input type="email" name="email" class="form-control" id="emailaddr" aria-describedby="emailHelp" placeholder="you@example.com">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone.</small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Enter a password">
+          <small id="passwordHelp" class="form-text text-muted">Password must be at least 8 characters long.</small>
+        </div>
+        <br/>
+        <div class="g-recaptcha" data-sitekey="6LdyC40UAAAAAMnXjAxGW0CJc9G8WCdH2fqNOlMf"></div>
+        <br/>
+        <label>By clicking “Create Account” below, you agree to our terms of service and privacy statement.</label>
+        <br/>
+        <button type="submit" id="button_register" class="btn btn-info">Create Account</button>
+      </form>
     </div>
 
     <!-- Optional JavaScript -->

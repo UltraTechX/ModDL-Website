@@ -3,3 +3,4 @@ mail/
 robots.txt
 web.config
 .htaccess
+*.php
