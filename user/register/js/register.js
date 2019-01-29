@@ -32,6 +32,8 @@ $('#registerForm').submit(function(){
       data : $('#registerForm').serialize(),
       success: function(response){
         console.log('return code '+response);
+        var resp = parseInt(response, 10)
+        
       }
     });
     return false;

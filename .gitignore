@@ -4,3 +4,4 @@ robots.txt
 web.config
 .htaccess
 *.php
+**/php_errors.log
