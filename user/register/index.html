@@ -59,6 +59,7 @@
       <h4>Create your account</h4>
       <hr size=30 width=66%>
       <form name="registerForm" id="registerForm" action="https://opifexdev.net/user/register/register.php" method="post">
+        <input type="text" id="website" name="website"/> <!-- honeypot field to prevent bot spamming -->
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter a username">

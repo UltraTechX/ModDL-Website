@@ -71,3 +71,7 @@ label{
 #accRegisterBox{
   padding-right: 10px;
 }
+
+form #website{
+  display:none;
+}
