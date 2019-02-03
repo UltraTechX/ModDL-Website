@@ -58,7 +58,8 @@
       <br/>
       <h4>Log into your account</h4>
       <hr size=30 width=66%>
-      <form name="registerForm" id="registerForm" action="https://opifexdev.net/user/login/login.php" method="post">
+      <form name="loginForm" id="loginForm" action="https://opifexdev.net/user/signin/login.php" method="post">
+        <input type="text" id="website" name="website"/> <!-- honeypot field to prevent bot spamming -->
         <div class="form-group">
           <label for="username">Username or Email</label>
           <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter a username">
@@ -68,11 +69,13 @@
           <input type="password" name="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Enter a password">
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="rememberMe">
+          <input type="checkbox" class="form-check-input" name="rememberMe" id="rememberMe">
           <label class="form-check-label" for="rememberMe">Remember Me</label>
         </div>
         <button type="submit" id="button_register" class="btn btn-info">Login</button>
       </form>
+      <br/>
+      <p>If you forgot your password please <a href="https://opifexdev.net/user/forgot/">click here.</a></p>
     </div>
 
     <!-- Optional JavaScript -->

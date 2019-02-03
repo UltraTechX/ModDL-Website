@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 var b1 = document.getElementById("button_register");
 
-$('#loginrForm').submit(function(){
+$('#loginForm').submit(function(){
     $.ajax({
       url: $('#loginForm').attr('action'),
       type: 'POST',
