@@ -42,10 +42,14 @@ html, body {
   margin-bottom: -10%;
 }
 
-#accInfoBox{
+#accSigninBox{
   padding-right: 10px;
 }
 
 #accRegisterBox{
+  padding-right: 10px;
+}
+
+#accInfoBox{
   padding-right: 10px;
 }
