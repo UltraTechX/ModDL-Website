@@ -10,7 +10,9 @@ $('#registerForm').submit(function(){
       success: function(response){
         console.log('return code '+response);
         var resp = parseInt(response, 10)
-        
+        if(resp==24){
+          window.location.replace("https://opifexdev.net");
+        }
       }
     });
     return false;
