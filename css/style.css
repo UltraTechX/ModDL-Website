@@ -1,3 +1,4 @@
+/*desktop + tablet - both*/
 html, body {
   width: 100%;
 }
@@ -53,6 +54,8 @@ html, body {
   padding-right: 10px;
 }
 
+
+/*phone - landscape*/
 @media screen and (max-width: 1024px) {
   html, body {
     width: 100%;
@@ -160,7 +163,6 @@ html, body {
   }
 }
 
-
 @media screen and (max-width: 650px) {
   html, body {
     width: 100%;
@@ -224,6 +226,7 @@ html, body {
   }
 }
 
+/*phone - portrait*/
 @media screen and (max-width: 480px) {
   html, body {
     width: 100%;
