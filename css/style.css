@@ -1,5 +1,5 @@
 html, body {
-   
+
  }
 
 .background{
@@ -43,6 +43,11 @@ html, body {
 h1{
   color: rgba(200, 200, 200, 0.9);
   font-family: "Roboto", sans-serif;
+}
+
+p{
+    color: rgba(200, 200, 200, 0.9);
+    font-family: "Julius Sans One", sans-serif;
 }
 
 #topHeader {
